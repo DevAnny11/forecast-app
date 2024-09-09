@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel = "stylesheet" href = "src/style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Meteo app</title>
+  </header>
+  <body>
+    <div class = "weather-app">
+    <header>
+      <form class="search-form" id="search-form">
+        <input type="search" placeholder="search a city" required class="search-form-input" id="search-form-input"/>
+        <input type="submit" value="search" class="search-form-button"/>
+      </form>
+    </header>
+    <main>
+        <div class="weather-app-data">
+          <div>
+        <h1 class="weather-app-city" id="city"></h1>
+        <div>
+        <p class="weather-app-details">
+            <span id="time"></span>, <span id="description"></span>
+            <br/>
+           humidity:<strong><span id="humidity"></span></strong>, Wind: <strong><span id="wind-speed"></span></strong>
+        </p>
+        </div>
+        </div>
+       <div class="weather-app-temperature-container"></div>
+       <div id="icon"></div>
+       <div class="weather-app-temperature" id="temperature">  </div>
+       <div class="weather-app-unit"> °C </div>
+       </div>
+    <footer>
+        This Project was coded by 
+        <a href => Ajewole Olubukola</a> and is <a href> open-sourced on Github </a> and <a href>hosted on Render</a>
+    </footer>
+  </main>
+    </div>
+    <script src = "src/index.js"></script>
+  </body>
+</html>
